@@ -16,7 +16,7 @@ Set Variables
 Launch Browser 
     [Arguments]    ${testurl}=http://www.google.com
     Set Variables
-    Open Browser    url=${testurl}    browser=${BROWSER}    options=add_argument("--remote-debugging-port"); add_argument("--disable-dev-shm-usage")
+    Open Browser    url=${testurl}    browser=${BROWSER}    options=add_argument("--disable-dev-shm-usage"); add_argument("--disable-gpu")
     Maximize Browser Window
 
 
