@@ -2,7 +2,7 @@ from pyvirtualdisplay import Display
 
 
 def handleVirtualDisplay(start=True):
-    display = Display(visible=0, size=(800, 600))
+    display = Display(visible=0, size=(1920, 1080))
     if start==True:
         print("*** STARTING VIRTUAL DISPLAY ***")
         display.start()
