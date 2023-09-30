@@ -6,11 +6,11 @@ def handleVirtualDisplay(start=True):
     if start==True:
         print("*** STARTING VIRTUAL DISPLAY ***")
         display.start()
-        print(display.is_alive)
+        print(display.is_alive())
     else:
         print("*** STOPPING VIRTUAL DISPLAY ***")
-        print(display.is_alive)
-        if display.is_alive==True:
+        print(display.is_alive())
+        if display.is_alive()==True:
             display.stop()
 
 
