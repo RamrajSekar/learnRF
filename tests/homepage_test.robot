@@ -2,7 +2,7 @@
 Resource         propertyFile.robot
 Resource         HomePage.robot
 Resource         RegisterPage.robot
-Suite Teardown   Close All Browsers
+Suite Teardown   Execute Tear Down
 
 *** Test Cases ***
 Verify If Browser Is Launched with User1

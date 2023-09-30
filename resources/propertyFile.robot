@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    resources\scripts\getConnection.py
 
 *** Variables ***
 ${BROWSER}    headlesschrome
@@ -12,6 +13,7 @@ ${DEF_WAIT}   30sec
 Set Variables
     Set Selenium Timeout    ${DEF_WAIT}
     Set Selenium Speed    0.1s
+    handleVirtualDisplay    start=True
 
 Launch Browser 
     [Arguments]    ${testurl}=http://www.google.com
@@ -19,6 +21,9 @@ Launch Browser
     Open Browser    url=${testurl}    browser=${BROWSER}    options=add_argument("--headless"); add_argument("--disable-gpu")
     Maximize Browser Window
 
+Execute Tear Down
+    Close All Browsers
+    handleVirtualDisplay    start=False
 
 # 1-1-2020
 
