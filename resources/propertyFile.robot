@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${BROWSER}    chrome
+${BROWSER}    headlesschrome
 ${BASE_URL}   http://demowebshop.tricentis.com/  #https://www.yatra.com/  #http://demowebshop.tricentis.com/
 ${USERNAME}   rsekar@test.com
 ${PWD}        India@11
@@ -16,7 +16,7 @@ Set Variables
 Launch Browser 
     [Arguments]    ${testurl}=http://www.google.com
     Set Variables
-    Open Browser    url=${testurl}    browser=${BROWSER}    options=addArguments("start-maximized"); addArguments("--disable-dev-shm-usage");
+    Open Browser    url=${testurl}    browser=${BROWSER}    options=add_argument("--start-maximized"); add_argument("--disable-dev-shm-usage");
     Maximize Browser Window
 
 
