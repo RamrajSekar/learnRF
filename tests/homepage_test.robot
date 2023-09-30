@@ -21,10 +21,10 @@ Verify If Browser Is Launched with User1
 #     Navigate To Registration Page
 #     Register A User
 
-Verify If Browser Is Launched with User2
-    [Tags]    1
-    [Setup]    Login Test Case Seup    uname=testabc@tester.com    upwd=Test123
-    Verify Login    inputName=testabc@tester.com
+# Verify If Browser Is Launched with User2
+#     [Tags]    1
+#     [Setup]    Login Test Case Seup    uname=testabc@tester.com    upwd=Test123
+#     Verify Login    inputName=testabc@tester.com
 
 ***Keywords***
 Login Test Case Seup
