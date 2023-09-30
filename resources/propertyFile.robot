@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    ${EXECDIR}\\resources\\scripts\\getConnection.py
+Library    ${EXECDIR}//resources//scripts//getConnection.py
 
 *** Variables ***
 ${BROWSER}    headlesschrome
