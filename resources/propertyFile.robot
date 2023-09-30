@@ -16,7 +16,7 @@ Set Variables
 Launch Browser 
     [Arguments]    ${testurl}=http://www.google.com
     Set Variables
-    Open Browser    url=${testurl}    browser=${BROWSER}
+    Open Browser    url=${testurl}    browser=${BROWSER}    options=addArguments("start-maximized"); addArguments("--disable-dev-shm-usage");
     Maximize Browser Window
 
 
