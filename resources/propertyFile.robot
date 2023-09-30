@@ -26,10 +26,11 @@ Launch Browser
     Maximize Browser Window
 
 Execute Tear Down
-    IF    '${platform}'!="win32"
-        handleVirtualDisplay    start=False
-    END
     Close All Browsers
+    IF    '${platform}'!="win32"
+        Run Keyword And Continue On Failure    handleVirtualDisplay    start=False
+    END
+    
 # 1-1-2020
 
 # 01/01/2020
