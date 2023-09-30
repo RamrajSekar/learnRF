@@ -22,7 +22,7 @@ Set Variables
 Launch Browser 
     [Arguments]    ${testurl}=${BASE_URL}
     Set Variables
-    Open Browser    url=${testurl}    browser=${BROWSER}    options=add_argument("--disable-gpu"); add_argument("--headless")
+    Open Browser    url=${testurl}    browser=${BROWSER}    #options=add_argument("--disable-gpu"); add_argument("--headless")
     Maximize Browser Window
 
 Execute Tear Down
