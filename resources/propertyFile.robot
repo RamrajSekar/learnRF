@@ -15,9 +15,9 @@ Set Variables
     Set Selenium Speed    0.1s
     ${platform}=    Evaluate    sys.platform   sys
     Set Suite Variable    ${platform}
-    IF    '${platform}'!="win32"
-        handleVirtualDisplay    start=True
-    END
+    # IF    '${platform}'!="win32"
+    #     handleVirtualDisplay    start=True
+    # END
 
 Launch Browser 
     [Arguments]    ${testurl}=${BASE_URL}
@@ -28,9 +28,9 @@ Launch Browser
 
 Execute Tear Down
     Close All Browsers
-    IF    '${platform}'!="win32"
-        Run Keyword And Continue On Failure    handleVirtualDisplay    start=False
-    END
+    # IF    '${platform}'!="win32"
+    #     Run Keyword And Continue On Failure    handleVirtualDisplay    start=False
+    # END
     
 # 1-1-2020
 
